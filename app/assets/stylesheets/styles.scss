@@ -1,7 +1,3 @@
-@import "_global";
 @import "_variables";
-
-body{
- background-color:$gray-100;
- font-family: $font-family-sans-serif;
-}
+@import '_bootstrap-custom';
+@import "_bootswatch";

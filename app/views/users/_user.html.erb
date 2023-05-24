@@ -1,12 +1,5 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>Uid:</strong>
-    <%= user.uid %>
-  </p>
-
-  <p>
-    <strong>Name:</strong>
-    <%= user.name %>
-  </p>
-
-</div>
+<tr id="<%= dom_id user %>">
+<td><%= user.uid %> </td>
+<td><%= user.name %></td>
+<td>  <%= link_to "Show this user" , user , :class => "btn btn-primary"%> </td>
+</tr>

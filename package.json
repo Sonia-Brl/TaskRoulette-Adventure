@@ -1,6 +1,0 @@
-{
-	"name": "task-roulette-adventure",
-	"dependencies": {
-		"datatables": "^1.10.18"
-	}
-}
