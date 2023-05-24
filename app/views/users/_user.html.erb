@@ -1,5 +1,10 @@
-<tr id="<%= dom_id user %>">
+<tr id="<%= dom_id user %>" class= "table-light">
 <td><%= user.uid %> </td>
-<td><%= user.name %></td>
-<td>  <%= link_to "Show this user" , user , :class => "btn btn-primary"%> </td>
+<td><%= user.name %> </td>
+<td>  <%= link_to '<i class="bi bi-eye"></i>'.html_safe, user , :class => "btn btn-primary btn-sm"%>
+<%= link_to '<i class="bi bi-pen"></i>'.html_safe, edit_user_path(user) , :class => "btn btn-warning btn-sm"%> 
+<%#= link_to '<i class="bi bi-clock-history"></i>'.html_safe, user , :class => "btn btn-info"%> 
+<%= link_to '<i class="bi bi-trash"></i>'.html_safe, user,
+  data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'},:class => "btn btn-danger btn-sm" %>
+</td>
 </tr>
