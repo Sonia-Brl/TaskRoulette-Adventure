@@ -26,9 +26,15 @@
 !/tmp/storage/.keep
 
 /public/assets
+/app/assets/css
+/app/assets/fonts
+/app/assets/js
+/app/assets/images
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-
+.DS_Store
+npm-debug.log
+package-lock.json
 /node_modules/*
